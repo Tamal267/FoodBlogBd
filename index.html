@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodBlogBD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success shadow-box">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">F<span style="color:rgb(239, 111, 239);">oo</span>dBl<span style="color:rgb(239, 111, 239);">o</span>gBD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                    <i class="fa-solid fa-house hid"  style="font-size:15px;color:aquamarine"></i>  Home
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fa-solid fa-briefcase"  style="font-size:15px;color:aquamarine"></i> Services
+                    </a>
+                    </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-box" style="font-size:15px;color:aquamarine"></i>  Order
+                </a>
+                </li>
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-circle-info" style="font-size:15px;color:aquamarine"></i>  About Us
+                </a>
+                </li>
+                <a class="nav-link" href="#">
+                    <i class=" fas fa-comment" style="font-size:15px;color:aquamarine"></i>  Contact
+                </a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://e3.365dm.com/22/05/2048x1152/skynews-junk-food-burger-chips_5771145.jpg" class="d-block w-100 img-border" height="300" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="cls0">Earth of food</h5>
+                          <p>You will find a lot of foods here</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg" class="d-block w-100 img-border" height="300" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="cls0">Healthy</h5>
+                          <p>Health is wealth</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://cdn.vox-cdn.com/thumbor/9qN-DmdwZE__GqwuoJIinjUXzmk=/0x0:960x646/1200x900/filters:focal(404x247:556x399)/cdn.vox-cdn.com/uploads/chorus_image/image/63084260/foodlife_2.0.jpg" class="d-block w-100 img-border" height="300" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="cls0">Hungry!</h5>
+                          <p>If you are hungry, order now!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              
+                </div>
+
+                <div class="col">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="cls0">Hungry!</h5>
+                          <p>If you are hungry, order now!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://e3.365dm.com/22/05/2048x1152/skynews-junk-food-burger-chips_5771145.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://cdn.vox-cdn.com/thumbor/9qN-DmdwZE__GqwuoJIinjUXzmk=/0x0:960x646/1200x900/filters:focal(404x247:556x399)/cdn.vox-cdn.com/uploads/chorus_image/image/63084260/foodlife_2.0.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              
+                </div>
+
+                <div class="col">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://cdn.vox-cdn.com/thumbor/9qN-DmdwZE__GqwuoJIinjUXzmk=/0x0:960x646/1200x900/filters:focal(404x247:556x399)/cdn.vox-cdn.com/uploads/chorus_image/image/63084260/foodlife_2.0.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="cls0">Trust & Quality</h5>
+                          <p>We ensured the product quality</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://e3.365dm.com/22/05/2048x1152/skynews-junk-food-burger-chips_5771145.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://e3.365dm.com/22/05/2048x1152/skynews-junk-food-burger-chips_5771145.jpg" height="300" class="d-block w-100 img-border" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid slide-car text-center">
+          <i class="fa-solid fa-gift" style="color:rgb(194, 11, 250)"></i> Offer  <i class="fa-solid fa-receipt" style="padding-left:20px;color:rgb(194, 11, 250)"></i> Cash
+        </div>
+        <div class="white-div shadow">
+
+          <div class="catagories">
+          
+            <i class="fa-solid fa-landmark" style="color:white;"></i> Catagories
+  
+          </div>
+          <div class="cat-hr">
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/198/198416.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Barger</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2094/2094661.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Pizza</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/6482/6482621.png" class="card-img-top img-hove img1r" alt="...">
+                  <div class="middle">
+                    <div class="text1">Banana</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/4163/4163765.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Tomato</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/290/290435.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Cacke</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3077/3077188.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Icecream</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2909/2909894.png" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Fruit</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="card img-hover1" style="width: 10rem; height: 10rem;">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABIFBMVEX///8AAADvPDz/1y7OODj/vwv4Pj70PT3/3zD/2i//3S/PODjUOjr/2S7/3jDWOjr/xAv09PTrOzvPNDTgODi8vLzPz8/DMTH/wwtYFhagKCjaNzfe3t4xDAz/vgi2Li6FISHn5+ezlyClpaXFxcWWlpZBEBBhGBjwyit5Hh58fHw5Dg4bGxvt7e04ODijKSlvHBwfCAjjvyl1YxVoaGiFhYWLIyNMTEwmCQmTfBrSsSYpKSlUFxfEpSNIEhKhiB0/NQsTBQUvKAiGZAZNTU2wsLCFcBhxcXGtkh89PT1nVxJVRw8kHgZ8aRYuLi5QQw4oIgcYFAQ2LgmUbwbIlgi3iQinfQflqwocFQFaQwN+XgXtsgrHlQhvUwRNOACyhQihyxRhAAAXiUlEQVR4nN1de0PayhJvABMegSBSUdAGRUW0FrSWqlVbeqq2Wvs+rb2959zv/y3uJtnH7O4s2DaB4vxTqwH2x8zOe3bv3fuTaanV2pn0GhKldYvQ/KRXkSC1rJAmvYzk6H4E8O4ycZ4CtNYnvZKEaIkBtF5NeinJ0KwlaNJrSYaeAoRLk15MEvQEALRak15NAnQGAVr7k15O/LRiyTTp9cRP7yiy5mL078qkFxQ3sU24YfejH+5PekUxEzf1VacW/bA16SXFS9wS1pxUNfrp0aTXFC9dUIB9O5WyD6KfZye9qDiJyeg2AZhyOtF/1ia9qjjpIUXYcAKE/t1zvtcpwG4AMMU24ptJLys+Ympmww4Bppzdu2bzL6CMErLb1HFbP1tbugspGxYU9ikLU05dct+ePd1aP5tfmmLV+ioCMkgxcuYsjB5Oa2aDWQrfERBRhFMbMz6V1Uy4ERdxhBeTXusvEWNhTbDQJKbWs0kv9pdoP1r8MWAhgdjoHGMQJ73YXyGmSOeclESObdvVOb/eXNzYFQin0XRQW3hqpxByCNl2qtKotadW1TB3puZgCIXqoRZyCqNiWqXYHg6QO+NTmICjyZnuKIRUuT6Z9Hp/mpieGQGQhxvTl2LcihbeHInQjh6cvoDKYCoQhAfTaRCpP7M8EiAPqKYtwKA50vpohCx3M20GkQppdSRAHjJOWXaKatKDSmU0wuk0iNTc99yMN4qNzCC+aq1Nk6DSsKJbyBBqUEYGLjcCsQJDjKf7T87WVqZA69AsaSFEmMm4ASNtf9vqVRHVYyH0aOvPZuhKtMxTL8PIrdrd8Hf6xrS3MYh/UFfK7OzO/NrafUJr8zuzkXzR1pmOmxHkDcLf9TUmMnOh0h/g5aysrW+9eaaK15snrSXqstULAmCBVtZ6+las4ggn6+XMzq+/MqwLUAYijIQUc1Sdam97gLx8cjtxpfUUWQ9CXc/lGF1q2FEvxyHR/pxf77QP4MsntBGX1lW5HEY936N70W1Gv/FNflyU1wgzONRTPZsEvrNHPwEvpO2+GzLSpcv23RFuDsFJt+z4a3BMgfwkDZoZgtE7jf5HwI50VqnqGXe5f960+Q56nWaz3+83O50mzA8C6mRcaiysQGgbIxBSL+fpePG9MfOoYTuMyD5q+N2e/lDfi/7dDp0AbwTE6HsaZx58Xtt+nw6Pzvl/fDmrTXA2ump9Yjn6ZzFycwpDAdob0cNjw7ezr6z2anUzm89lD/kv6poZd+yKjxVhelS1FobpGxb2jysPvi6v8f1qOpsrpglln/NfdpCggYDsLmvSyh25IRAdalnGY/LnH0orPNyj8EKIq/z3iynUkju1DRlhV7g5ZojOOPPgsoC+zpU4vBDiCf/TMhYXBYyck4TVB864ESIL+8dg8uctmd7nJYDpdOlI/NGQOCQYgazu1gREo7oZXx78iaXSZVaBmN/7KCQQrTIFsgr7E7q3gDimPPgO5qFdZ2WE6dzmC/7HjtHnrLRRiCa7aLNnHz1ZSy6jASW06fTZj4cqxGLxij+3XTFhpBF+SHUR+hu8Gxt8tvVu634iLbct8RHbDTtlcz/luQaxJGy/VTNIaspuCIcOQMR9VPtUlZ39Vtym40K8ed8Jm+549X1VhZjOvgYMMkF0UqJ+DwQVVah4YuPpeoxZY+FlLzdYSxpPGJ2UVIilPbGORbOkinULiG7oz6qPNjCEAcWEcVYEuT1hyStczE40LkJ9MzBLKt/NVs0l5LlupuvXm726+q04c0A1SRTLlgQTPNAAOCJjpHOxmL8Wr+roTKEQudk48Ov93rEwlOp+dGxnrt6TkhoRxZH83xFvN6e0wgyDCDfj8pyBjVClStTWX0BiFKfqdxTXNobAXwDc1WVHQNQElWxGYfyNCgcIqkxGb8Gu1PpAZH9fpcIhMy1rBCDqGjWdS1+K157ifqoJ4oZp7wafClTU77NwVgolNFeTTUwQeq1DlCSVsBHFqNs69MsEn1kVaf8YZFRJVmiMABA10x9K6kvAlwbGGKcx0PDtDgFoi0+MI9hQo/kDfYHiAw9VNzyQ1OJj8PI+xsaKD544bTfrfs0zAnTspng4hhQxD+f5htrWP1PsxWs1mAolVcSM5BvCbKPHtuJywyMm0S0UjAlGuyEk9GEMpnCNA8zyuO9YT8EIiJc5HWI6vwkUjtWuam9QZblTq85cG9fAQBB2vYkhyFhhb3ZVKooEhW6pgF18QRToCDZSvxZQJcMlnZVQUSbaDZACiSUaZr7ahzThjMik6fUwAPHtXl6HmM6n4W7c9ZXt6LpMTptmJjopsAPjSdnwnP1myJcsX6SeSHOqIhQ6QlQqYeMRMP/WhuzjNDIu88c4E5UYw7H9gXj9o1i8Ub4JjyKuFPM8sm3qECtCgF4jKjUw/yBqJLIOLUeFVxNFdrEh46vB0nc8+ZpZsWDGh9x79rs+ohFFCu0cUakBG/degFVaPaByMrxQM+BhFMQ3J7WCx1RHZJbwUghdsciXqHMRRnvvMX1D2AjyqQF1OEY3U2BGkatTpmscpyZ5PXFVoJiMhlqGQ0xzDwVJagMP8+OeFmtQjSOJasBHJ9qIGY+K+QbLaHgRPMeXcsjPYisEM3dUDouK6Q/DIALnZBXdjERUJeNI9uNcgLEq6vqWL3QNEc+m9HSMRVLuzHxMSyvNbb7l3z8SwYHxkMc5VFKD7fheWvRxzXYqgX2g6jhqSSkU3Eq1q5QALuIrzYCg972s/AHENtJFAVTqy03MMobb8eSltPCDbsorZJhNHHgEnVfQQl3rVZzZNehwH6oQ+fJOdYWackA11CCp5D3yssqhHQz0Z7/Q7egR1dNYOzGWpPc+kXmRS39if1lG0mjQdbzEdSqhfG71RkawUffQ6SDKv5g7TZQK/Z68zmKaG41dJHC34azWkYmNxXx+VZZVAtKEbz/u7C/L3zNPTNE2ECJWYHIqQMYOSyY2pvP5k0/WaHrWir9SQeP65RSD+KKoQMyJ0oSPuDcwSv20h/mpVOCzJ7Je1ekiiUYoPulp85DhUlllMS9iBcyDg5ZxGBsJxj3ZB5DoSUJ9XrQFb9kGGYpzFWJWLAyxGkRSgdp4uWfajcE7ldKvP1g6xV964cQUaZAMEo6YliwEbQkbWGUC6lTrvGiwjZFA5I9kR2frLNETa2hYeBCu2ua5Vy2rDd1oLKVtN6DJPhnCxsBA/vgKAo+Eey7op9AZM4er8COVDbBmjxW0HakmdrVZGoZxplz+9pmZyGQHEdghVUzwRIVJy0/kN8UG6mHFFzsD29oO00NE9cHMzEK5/Dl6MtkmRGoqePs1qDDtqToxlxZWY7mBKRxHig1W80atShASjN+i5xJt0VuhixFJBBAwbKoLlAramGVMSa0l1iejjxMh/BE9lmjPOg2bYFbU4cbtow4R6htUUh1HKr1cGSxHiHCmTNNVSU6Q0AyiVDcQRb4bDaKkb5bRwoTdkFzqx5sYRorwbeIImZBuSNwAdUwdYi4NPC+8Scj2pUbaax1jmSL8njhC3lMiR/DC8uuCSiw22IzHaJlQEdWAjzkU4V/R3xM0iGJoQnY3gS+NQJSy9qjCSdlVudXgck/CqCBMbvbQXPAFuUIdIrGMwCNp4+0lStLTen9SEnnVhRkJYXJtllLvYcYEESlNSJJq2I2OrTSXvnydZn7OzLgQtqQVNEwQj/RsaDELdCrZjQaMvpJeOt8rhQW5BxTh56QRKiXfqgki0nmhlAnreAuN4/jK7F3YRM0RJs5D+cOtXbkABNQN0pYgW3+82ovJKtGsR+nywngQ0jTpSy5wslmEeXusZk/YCJMSBo0TYFSThW8/fysHIBPXpVTRXApmqBBFWPsYKzDJ7SVWHW1nD4tJWpvazedvJLigCBObUqNO6fO8COCPFYjCu8ELTPnNK7DsgVrtFRireqfQzV/fkvZpaB/3SQ7UtE8ViCLH9BEtaCtF++2aAWOgdNBeoUQR0thwMyjb89ZChYtORiwEU6lBCe0arnZxzojRnkMmohJF+EggLJa47lchgh6m52goRGyjVO1toyFHhBGdFUrsTFrqs92EnAFle6UC41SESbvEa2i5klx66TVMfAx2ZF2tMiUWAVOEHyLZKxa56lfThY743k01NLXa2zbKKhEKz+9I4VVikyMUIUtwA4gHCkSYtjfkCYvZPTkJelozdQoXMgXX85uxdhziRHPB54wroDyhFplg2v7ckHtRt6O13UUxVqN5Gder1WlXTWLmcE1BSPaiYIOSSoM1tBe3rvZaTWRD8mGLgkc3ZGKq9L6KEGpUdTYE6htzRjuXX31rSbToq4wUY0/MECUFEEEoQVSjPpjSfmyu9pZW1cKLzMiqQEh9wuQGuCjCQyhzxZKoo6ltQrDR/saYCQ0q2mq197Rb4SDFiKVL7X9ySX2Eh4G+EOO9PbVXH8wukS/GxMZirnSkVUIX/QikYGGGbcPk8lAMoRLBg3hBM4wpECO8GFImzKm2IwRJOGmLoS522kmCI9tUl16pC4W+tFpHk0ZCDg1dQhHGzUNLo+O677HjQFhDTYJzlCwP9Vh1qPNgUEvTN7BM+Na8GwPbk0PL9u1+zXPBORIJTvvyXKI2NZnfFP2v6mCoXCa8HlrtJcKKMNKylnt93yvQ/yQ4dS+ypdroRA40mGhFbTgBYVmrQxoTAkZmj2BHNCCavkn0sguwTG0wNAfWlVEltQLjvPfDGhOCbyubXh3SZJJoARgMyGhl+yJoTdA7TKT2Eus6jXYJQ0ZursJsB6REj4aARz3p83ZQpR5rY2wSG63X+SHbkYJMr+oGJOkjWqQTL/TEdn4TdGlp6VC7BmO8tydDt2MkruWZL5/l8CPpcxPkpL7WfJHOwc2oDYYqJbRPozAWyw+C7oQf//0PbFNMFKDSdYlAlPKh21r6xW5I2bP3R9mhGGkqP0RJCxbJnpS0dKae+4RUYEp7IBrS5nvkuY8A4xA+zgAq/5e+IrlWr5Y6hxcSki7MwQEffaLQScmZ3hcnWWzaK5JRgJB+bwnpmXn1RA9RykRmX+WUr15jUqu9H05yqO2AABf+Rx9OpNfywtJocejsq1zxRQZD7Tk5mX3zXC3bKwBnFqhTGL8/M9uSTwxiVIGDoYiElaB32dTqL8qYEqHHe1mZkRDfTPkrfSzumtMSuvcC6trDZ1/lUbSB3pzgOL5yOsCL1TTQOtImnJmxEmHh/JDDKo9tABEdDJVH0Rb1qjbBqKayHx/lI0bKWmam/A99INZduKafKLfdq9eYe1mBFRjDYOgRNNR9vVRITIda7b053AylVd6EX+hf47w2d0nl326vmwnCUI/KVteBg6Ef0YRorigl7rt6JpTsR63ucrW6mVtYkBCybyq+xuAdRX0e9BsVNxredGk0G5wO71QH/BHE9odshMnQZaRU6NgN/WiZf79GNW25OyHGaoVyolxzznHC0aowG8TENLhJxKmInYQYxpCNUsi+iHZDV+r6kSQv//oyUw5ZyXpK4/NI56UDVQ+6qeiLZ3ONLFkSXk8Ii0znaBNzMStVtfFSIRFW7HSZ71+/zZTLM0wpx2UpJAHdEBl2lrZkh9/S62DEcVDWFZ7WVqraeKkwKNuj53x+/8r0aEwZNqmr61TaNzzxTFdCe2hB98WNaTBUFlVDqdCxM4ZTrCOKpxoD/U9VLzQYQuY504mm2wyGlpTBULx079iObxxPi6VHaOUdeEdNt3Ndw5J6B+yKQlBHu77tYOiGVmEKP6PgZerogU+xhIXwLmzdlRS6hjORnUMtDYYaJFUvFe7WK+qXWA2/QK/Q7al7MhZ3DUgofmpTlTNxQJ/jZ1PAwVD8PIEAY/5EKaP1ZGFt8A8IatqSvMZg62eBE2NoGxRMZMpFnPFxu8HQXEnFuFyvMpAVeKZ+UNN2RToghk24IoKkA9OxW4SJ5Nt1Xc/zWOgjahQwrf3RXJzQS75WuxYeMFfNqOTxDRlDDhgYCePRaUQWvZpfb7ZPB+JpUbx3qiCqPS8asy/Y0GSnpgMsCIAxXOa4Jj4MbzOPMPi6Td6FfwcJmA9DS4VHWqZ30Ou6XqGAAoyhPUhkQQ0n31KAGj5Ci/BCzRrg7ohSITIY2q5n+MUBBTG3/e73AQpHu2dsS0oZbwaBtXunAmKhl0NLhaX0qprMJrTR9N0AZSHDRf7h7/syIMt73PeJajMdYYgCVIow0mDo9bBpu2I+u3eNvN1gse97NRFsxOCsKbHSQcdvOBhM23S4pHQeIDxrK6jeDB0MzaZX/8XecSB+jKPQ1NI/Ybddn3M0iRVzhsvHvX5d9NRLdW25OGGaRIvYmC4vlH98VTtNAMUgovekQzwkWtQuPK30e81618+E54i6boZ/1cqAkDRReG4W1fKDaDD022cDyHcxdXet4W8PhygZxuBOA35PSkEoV/moPKXG9BotTZQXHrB0UwDyK6J3YuwiXVtHr6LAz6KucJvlCogbDWnyQjo4zbrRy2jlB3I+NCgv/e8f+ePjvrV5Xi+9GA7QFO6HK3plBr5XBSAdRzpZFZbRyO6bUfBxlF/BaxLpIV06u5CSNAb/poFBtPpepgA4qVS1r+iwXZlwD4MX5NQe/Ae8ILm5n537T/jR6ib772KCap2GJ+B7DcpLx65JOe3LvZB5BniEg5CB7xI9M+EeH+AyXu8C2gVhxbPJtJBLcFYJUmj/Lev7l/KCEd/fMEGe/JU41AvImJhYERALsIp00PWA90yQZuR5iX9xjAvlL9JBNGO4poImNMwHvQqFCo1GIKoyxoKn5JZe/L2ggCT//1uyh/vjuMyQmsgh154KiAVZFK3trutKYZA62/P5B8BInJrP8p/Hc73oSvRhw24f5hBdbQJrt5kB96cRjOrtMf98icoSC+WZv7/LfxrXXdTUk1s0h8NiL7rYaNJG0DBZEBi1qZdgnvCHCs/aH9+l93SdwxAyjcpiVbUUuNHpBv4rLVm5XTW8/K6FFY/GefddZPgHQwHSQQiWlmp09STHRqfv+4XwdGPPQ69zAvjGe78vzS2Oupw38G7c6NEBgdEfYEsf7LZ7vV6HkHGcMP4T5UYSbX4adaNb6KNGj54Sp41gRC4nuAVdjP/2SWrya8acBqMK89vagctGMNaHMAqnN5O5mJEuu+7PVW3bxm4FocRScOyQZterNX+Cke/Wk/ZADSTVEQ/aHYK0kkIzcexqJn74bThJdzt4r1oTgndPa7MMabDdQdKp7KCnLnLR7TDab034gmLDuvST0FmZu4ZcdLu11HryRr3m6s2r9db8H3CPtuGCVOS49chpG8DKEWtJiWKE8A7n8Arn4A7nCeMSZEhPLeteTnQHaNeugrvDqH8zuV12G1q6QLsSdR/Aqbatg7CgwzCyQciHk8YwmnaW7re29iWBRa8ksHmVswG3YdI32cVIs0trLerHGe4sFFT1+DZM9nTD2Ikm/4fc78I3ZoVa/MldBP5LNDrs5xuT9SxOesk/SdQHMN7JCBBSL2dc4XpsFC17aNgfESulTthn+XmKlr07EiE/CnPSC/5pol3RI6WUnfg17ovOf5/2zQZRJmsqNek93hU2yiCyolMMLRTjplsaRHY355SZ+4CYQRyuavgZ5n9OEHFrogaxXWuQaN+Y12BX+cVdwB0HgY6G3Y3FJsvgKCxkpmL69Mw9POw/bSrnX9IEeJzTLeOjdxhEWbnyXTh1/kxI6ogsJal3jyrSRM/bTo6w/FtAgoe8fXG8JYj4SJ6mwcR0MM27MKTZpfmz9a2nMtIuQ8gPaZtKRarQztLa2Tr1VFmGkUe+U5SfGUURID5Zwmqk4yvkJk40CxeFG7x5NtnLJ8ZLNNwInXEuo1OQJb09UWc8zN3YrBdhOo29geipSkGqn+vR6Qvth9I7thHFxU+TXlLMRB25mrhr5k7J6D1eDO/zWYypy5GOopUI1yIbb53C5MwoUlzUP7tg+Esk94ZPpG0kYZLGUe6YoYgIxoxTGvaOIgEwngmeP4/E+PAd1DIh8cm3aU1cjCTWHnYX1SilCOBdiglVWrvrAInn1lr/szNP/wfKTFpMQhzkBwAAAABJRU5ErkJggg==" class="card-img-top img-hover img1" alt="...">
+                  <div class="middle">
+                    <div class="text1">Chocolate</div>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <section class="slide-car">
+          
+          <div class="container">
+            <div class="col text-center about-us">
+              <button class="btn btn-warning" style="font-size:20px"> About Us</button>
+            </div>
+          
+            <div class="row pt-1">
+              
+              <div class="col">
+                <div class="card bg-about img-hover1" style="width: 18rem; height: 10rem;">
+                  <img class="img-border img1" src="https://images.everydayhealth.com/images/go-green-for-better-health-00-1440x810.jpg">
+                  <div class="middle">
+                    <div class="text">About Us</div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col ">
+                <div class="card bg-about img-hover1" style="width: 18rem; height: 10rem;">
+                  <img class="img-border img1" src="https://ychef.files.bbci.co.uk/976x549/p04tx3m6.jpg">
+                  <div class="middle">
+                    <div class="text">About Us</div>
+                  </div>
+                </div>      
+              </div>
+              
+
+              <div class="col-6">
+                <span class="welcome-about">Welcome To FoodBlogBD</span><br>
+                <span class="discover-about">Discover Our Story</span><br>
+                <span class="main-about">We always ensure that our products are pure. We try to send a order as soon as possible. We give offer to returning an order. We try our best.<br>
+                Every product has low cost...</span>
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <div class="white-div shadow">
+
+          <div class="catagories">
+          
+            <i class="fa-solid fa-cart-shopping" style="color:white;"></i> Services
+  
+          </div>
+          <div class="cat-hr">
+          </div>
+          <div class="container p-2">
+            <div class="row">
+              <div class="col">
+                <div class="card service-shadow img-hover1" style="width: 18rem; height:16rem;">
+                  <img src="https://img.freepik.com/free-vector/customer-using-mobile-app-tracking-order-delivery_74855-5229.jpg" class="card-img-top img1" alt="...">
+                  <div class="middle">
+                    <div class="text1"></div>
+                  </div>
+                  
+                  <div class="card-body">
+                    
+                    <p class="card-text">First Order</p>
+          
+                    <a href="#" class="btn btn-success" style="position:absolute;bottom:10px;">TRACK ORDER</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card service-shadow img-hover1" style="width: 18rem; height:16rem; ">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhUG72k-O6ftNdsEy5zuCQC5UJEGbTB-B7g&usqp=CAU" class="card-img-top img1" alt="...">
+                  <div class="middle">
+                    <div class="text1"></div>
+                  </div>
+                  
+                  <div class="card-body">
+                    
+                    <p class="card-text">Heavy Communication</p>
+                    <a href="#" class="btn btn-success" style="position:absolute;bottom:10px;">CUSTOMERS</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card service-shadow img-hover1" style="width: 18rem; height:16rem; ">
+                  <img src="https://img.freepik.com/premium-vector/medal-gold-silver-bronze-medals-are-prize-winner-sports-event_68708-693.jpg?w=2000" class="card-img-top img1" alt="...">
+                  <div class="middle">
+                    <div class="text1"></div>
+                  </div>
+                  
+                  <div class="card-body">
+                    
+                    <p class="card-text">Best Quality</p>
+                    <a href="#" class="btn btn-success" style="position:absolute;bottom:10px;">RANKING</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+          <div class="container-fluid slide-car">
+            
+          </div>
+
+          <div class="white-div shadow">
+
+            <div class="catagories">
+            
+              <i class="fa-solid fa-ship" style="color:white;"></i> Products
+    
+            </div>
+            <div class="cat-hr">
+            </div>
+            <div class="container p-2">
+              <div class="row" style="padding-bottom:20px;">
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem;">
+                    <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg" class="card-img-top img2" alt="...">
+                   
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Fruits  & Vagetables</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$100</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem; ">
+                    <img src="https://www.gfs.com/sites/default/files/styles/open_graph_image/public/MeatPoultryFish_ICHeader.jpg?itok=6c5beb2j" class="card-img-top img2" alt="...">
+                    
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Meats & Fishes</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$120</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem; ">
+                    <img src="https://images.thedailystar.net/sites/default/files/images/2022/07/04/oil.jpg" class="card-img-top img2" alt="...">
+                    
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Oil & Coocking</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$200</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card service-shadow " style="width: 18rem; height:22rem;">
+                    <img src="https://images.healthshots.com/healthshots/en/uploads/2022/07/25101436/breakfast1.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Breakfast</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$50</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="row">
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem;">
+                    <img src="https://www.tastingtable.com/img/gallery/25-most-popular-snacks-in-america-ranked-worst-to-best/l-intro-1645492743.jpg" class="card-img-top img2" alt="...">
+                   
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Snacks</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$10</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem; ">
+                    <img src="https://img3.exportersindia.com/product_images/bc-full/2019/9/2197949/chocolate-candies-1567580388-5057488.jpeg" class="card-img-top img2" alt="...">
+                    
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Candy & Chocolate</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$50</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div class="card service-shadow img-hover2" style="width: 18rem; height:22rem; ">
+                    <img src="https://www.beveragedaily.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/food-beverage-nutrition/beveragedaily.com/article/2017/12/20/what-s-big-in-beverages-in-2017-innovation-health-and-sustainability/7671501-6-eng-GB/What-s-big-in-beverages-in-2017-Innovation-health-and-sustainability.jpg" class="card-img-top img2" alt="...">
+                    
+                    
+                    <div class="card-body">
+                      
+                      <p class="card-text">Beverages</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$130</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card service-shadow " style="width: 18rem; height:22rem;">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/15/ba/99/beaking-bred.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Beaking</p>
+                      <span style="font-size:18px;color:rgb(198, 238, 18);">$40</span><br>
+                      <div style="position:absolute;bottom:5px;width:90%;">
+                        <hr>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <i class="fa-solid fa-truck-fast" style="float:right;font-size:30px;color:darkslategray"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              
+            </div>
+          </div>
+
+
+          
+        
+          <div class="container-fluid slide-car text-center" style="font-size:20px;">
+            <i class="fa-solid fa-tty" style="color:rgb(194, 11, 250)"></i> Contact
+          </div>
+          <div class="container">
+
+            <form>
+ 
+  
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" placeholder="Your E-mail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 mb-3">Submit</button>
+            
+            </form>
+  
+          </div>
+          
+
+          <div class="bottom">
+            <div class="socio">
+              <a href="" class="asocio"><i class="fa-brands fa-facebook" style="color:aqua"></i>  </a>
+              <a href="" class="asocio"> <i class="fa-brands fa-google-plus" style="color:aqua"></i></a>
+              <a href="" class="asocio"> <i class="fa-brands fa-linkedin" style="color:aqua"></i> </a>
+              <a href="" class="asocio"> <i class="fa-brands fa-instagram" style="color:aqua"></i> </a>
+              
+            </div>
+            Copyright Ⓒ FoodBlogBD
+            
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
