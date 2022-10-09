@@ -159,7 +159,12 @@ body{
     box-shadow:5px 5px 5px gray , -5px -5px 5px gray;
 }
 
+.col{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
+  }
 
 
 .bottom {
